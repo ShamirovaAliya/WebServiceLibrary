@@ -12,6 +12,11 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Remove="Components\Administrator\Form.tsx" />
+    <None Remove="Components\Administrator\Table.tsx" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Include="wwwroot\index.html" />
     <None Include="wwwroot\js\app.jsx" />
   </ItemGroup>
@@ -30,6 +35,16 @@
     <ProjectReference Include="..\WebServiceLibrary.Infrastructure.Business\WebServiceLibrary.Infrastructure.Business.csproj" />
     <ProjectReference Include="..\WebServiceLibrary.Infrastructure.Data\WebServiceLibrary.Infrastructure.Data.csproj" />
     <ProjectReference Include="..\WebServiceLibrary.Services.Interfaces\WebServiceLibrary.Services.Interfaces.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Components\Librarian\" />
+    <Folder Include="Components\Client\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <TypeScriptCompile Include="Components\Administrator\Form.tsx" />
+    <TypeScriptCompile Include="Components\Administrator\Table.tsx" />
   </ItemGroup>
 
 </Project>
