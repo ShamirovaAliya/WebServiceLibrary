@@ -11,6 +11,11 @@
     <!-- Folder where production build objects will be placed -->
     <BuildOutputFolder>$(MSBuildProjectDirectory)\build</BuildOutputFolder>
   </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="src\components\Librarian\" />
+    <Folder Include="src\components\Client\" />
+    <Folder Include="src\components\UI\button\" />
+  </ItemGroup>
   <ProjectExtensions>
     <VisualStudio>
       <UserProperties package_1json__JsonSchema="" />
