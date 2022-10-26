@@ -25,6 +25,17 @@
     <None Include="$(SpaRoot)**" Exclude="$(SpaRoot)node_modules\**" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\WebServiceLibrary.Infrastructure.Business\WebServiceLibrary.Infrastructure.Business.csproj" />
+    <ProjectReference Include="..\WebServiceLibrary.Infrastructure.Data\WebServiceLibrary.Infrastructure.Data.csproj" />
+    <ProjectReference Include="..\WebServiceLibrary.Services.Interfaces\WebServiceLibrary.Services.Interfaces.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="ClientApp\src\components\Librarian\" />
+    <Folder Include="ClientApp\src\components\Client\" />
+  </ItemGroup>
+
   <Target Name="DebugEnsureNodeEnv" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('$(SpaRoot)node_modules') ">
     <!-- Ensure Node.js is installed -->
     <Exec Command="node --version" ContinueOnError="true">
