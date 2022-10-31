@@ -1,8 +1,9 @@
 ﻿import React from 'react';
+import './Users.css';
 
 const Users = () => {
     return (
-        <table className='table table-striped' aria-labelledby="tabelLabel">
+        <table className="table mt-4">
             <thead>
                 <tr>
                     <th>Пароль</th>
@@ -12,7 +13,10 @@ const Users = () => {
             <tbody>
                 <tr>
                     <td></td>
-                    <td></td>
+                    <td>
+                        <button type="button" class="btn btn-outline-success m-1">Установить пароль</button>
+                        <button type="button" class="btn btn-outline-danger">Удалить</button>
+                    </td>
                 </tr>
             </tbody>
         </table>
@@ -23,8 +27,8 @@ export default Users;
 
 //import React, { Component } from 'react';
 
-//export class Table extends Component {
-//    static displayName = Table.name;
+//export class Users extends Component {
+//    static displayName = Users.name;
 
 //    constructor(props) {
 //        super(props);
