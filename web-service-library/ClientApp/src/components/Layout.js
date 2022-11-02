@@ -9,12 +9,23 @@ export class Layout extends Component {
 
         this.adminRoutes = [
             {
-                routeValue: '/',
+                routeValue: '/Users',
                 routeName: 'Пользователи'
             },
             {
                 routeValue: '/AddUser',
                 routeName: 'Добавить пользователей'
+            }
+        ];
+
+        this.librarianRoutes = [
+            {
+                routeValue: '/Books',
+                routeName: 'Книги'
+            },
+            {
+                routeValue: '/AddBooks',
+                routeName: 'Добавить книги'
             }
         ];
     }
@@ -24,7 +35,8 @@ export class Layout extends Component {
     render() {
         return (
             <div>
-                <NavMenu routes={this.adminRoutes} />
+                {/*Маршрутизация. Прокладывание маршрута к ресурсам*/}
+                <NavMenu routes={this.librarianRoutes} />
                 <Container>
                     {this.props.children}
                 </Container>
