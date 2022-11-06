@@ -2,6 +2,7 @@
 import AddUser from "./components/Administrator/AddUser";
 import AddBooks from "./components/Librarian/AddBooks";
 import Books from "./components/Librarian/Books";
+import Book from "./components/Client/Book";
 
 const AppRoutes = [
     {
@@ -13,12 +14,16 @@ const AppRoutes = [
         element: <AddUser />
     },
     {
+        path: '/Books',
+        element: <Books />
+    },
+    {
         path: '/AddBooks',
         element: <AddBooks />
     },
     {
-        path: '/Books',
-        element: <Books />
+        path: '/Book',
+        element: <Book />
     }
 ];
 

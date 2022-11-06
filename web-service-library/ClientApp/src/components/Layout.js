@@ -28,6 +28,13 @@ export class Layout extends Component {
                 routeName: 'Добавить книги'
             }
         ];
+
+        this.clientRoutes = [
+            {
+                routeValue: '/Book',
+                routeName: 'Книга'
+            }
+        ];
     }
 
     static displayName = Layout.name;
@@ -36,7 +43,7 @@ export class Layout extends Component {
         return (
             <div>
                 {/*Маршрутизация. Прокладывание маршрута к ресурсам*/}
-                <NavMenu routes={this.librarianRoutes} />
+                <NavMenu routes={this.clientRoutes} />
                 <Container>
                     {this.props.children}
                 </Container>
