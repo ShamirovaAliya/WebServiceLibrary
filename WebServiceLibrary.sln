@@ -3,23 +3,23 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32901.215
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebServiceLibrary", "WebServiceLibrary\WebServiceLibrary.csproj", "{5067281C-9C87-429C-B9E6-46760E287AF0}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebServiceLibrary.Domain", "WebServiceLibrary.Domain", "{0E962202-1722-46BE-9C41-B6A3CE920820}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebServiceLibrary.Domain.Core", "WebServiceLibrary.Domain.Core\WebServiceLibrary.Domain.Core.csproj", "{8842CFE8-6967-4FBC-B562-E30ECFCF0C91}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebServiceLibrary.Domain.Core", "WebServiceLibrary.Domain.Core\WebServiceLibrary.Domain.Core.csproj", "{8842CFE8-6967-4FBC-B562-E30ECFCF0C91}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebServiceLibrary.Domain.Interfaces", "WebServiceLibrary.Domain.Interfaces\WebServiceLibrary.Domain.Interfaces.csproj", "{45DC3614-7791-4639-9529-2EF64476BE97}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebServiceLibrary.Domain.Interfaces", "WebServiceLibrary.Domain.Interfaces\WebServiceLibrary.Domain.Interfaces.csproj", "{45DC3614-7791-4639-9529-2EF64476BE97}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebServiceLibrary.Services", "WebServiceLibrary.Services", "{476DD517-D85B-46F2-8D34-DFF70A992D58}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebServiceLibrary.Services.Interfaces", "WebServiceLibrary.Services.Interfaces\WebServiceLibrary.Services.Interfaces.csproj", "{DEB23694-4DA2-435E-9150-62A7E8E55ED3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebServiceLibrary.Services.Interfaces", "WebServiceLibrary.Services.Interfaces\WebServiceLibrary.Services.Interfaces.csproj", "{DEB23694-4DA2-435E-9150-62A7E8E55ED3}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebServiceLibrary.Infrastructure", "WebServiceLibrary.Infrastructure", "{DDBDDC72-B5B2-4A96-8A8E-E8F9655D1F01}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebServiceLibrary.Infrastructure.Data", "WebServiceLibrary.Infrastructure.Data\WebServiceLibrary.Infrastructure.Data.csproj", "{17EB8CFE-74EB-4355-9BFF-F7BF09320549}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebServiceLibrary.Infrastructure.Data", "WebServiceLibrary.Infrastructure.Data\WebServiceLibrary.Infrastructure.Data.csproj", "{17EB8CFE-74EB-4355-9BFF-F7BF09320549}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebServiceLibrary.Infrastructure.Business", "WebServiceLibrary.Infrastructure.Business\WebServiceLibrary.Infrastructure.Business.csproj", "{7C9BF887-530F-415F-8F8A-3FF2FB19B0F3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebServiceLibrary.Infrastructure.Business", "WebServiceLibrary.Infrastructure.Business\WebServiceLibrary.Infrastructure.Business.csproj", "{7C9BF887-530F-415F-8F8A-3FF2FB19B0F3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "web-service-library", "web-service-library\web-service-library.csproj", "{CA7DFDB7-6C0F-4AF5-B915-A3BB69D1F911}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,10 +27,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{5067281C-9C87-429C-B9E6-46760E287AF0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5067281C-9C87-429C-B9E6-46760E287AF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5067281C-9C87-429C-B9E6-46760E287AF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5067281C-9C87-429C-B9E6-46760E287AF0}.Release|Any CPU.Build.0 = Release|Any CPU
 		{8842CFE8-6967-4FBC-B562-E30ECFCF0C91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{8842CFE8-6967-4FBC-B562-E30ECFCF0C91}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8842CFE8-6967-4FBC-B562-E30ECFCF0C91}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -51,6 +47,10 @@ Global
 		{7C9BF887-530F-415F-8F8A-3FF2FB19B0F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7C9BF887-530F-415F-8F8A-3FF2FB19B0F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7C9BF887-530F-415F-8F8A-3FF2FB19B0F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA7DFDB7-6C0F-4AF5-B915-A3BB69D1F911}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA7DFDB7-6C0F-4AF5-B915-A3BB69D1F911}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA7DFDB7-6C0F-4AF5-B915-A3BB69D1F911}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA7DFDB7-6C0F-4AF5-B915-A3BB69D1F911}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
